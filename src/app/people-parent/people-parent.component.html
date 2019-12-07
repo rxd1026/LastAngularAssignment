@@ -1,15 +1,4 @@
-
-<div *ngFor="let name of ['Foo', 'Bar', 'Baz']">
-    <p>Hi, my name is {{name}}. I'm a lazy child component.</p>
-  
 <app-people-child></app-people-child>
-</div>
 
-<div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>
+<input type ="text" [(ngModel)] = "userInput">
+<button (click) = "search()">Search</button>
