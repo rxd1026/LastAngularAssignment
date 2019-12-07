@@ -4,6 +4,7 @@ import { StarshipsParentComponent } from './starships-parent/starships-parent.co
 import { StarshipsChildComponent } from './starships-child/starships-child.component';
 
 import { Routes, RouterModule } from '@angular/router';
+import { ApiCallService } from './api-call.service';
 
 const routes: Routes = [
   { path: 'starships-load', component: StarshipsParentComponent }
@@ -16,4 +17,8 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ]
 })
-export class StarshipsModule { }
+export class StarshipsModule { 
+  constructor(private svc: ApiCallService){
+    this.svc.printToConsole("Got The Response Starships")
+  }
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-people-parent',
   templateUrl: './people-parent.component.html',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeopleParentComponent implements OnInit {
 
+  
   constructor() { }
 
   ngOnInit() {
   }
 
+  
 }

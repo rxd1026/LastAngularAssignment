@@ -9,6 +9,8 @@ export class PlanetsParentComponent implements OnInit {
 
   constructor() { }
 
+ 
+
   ngOnInit() {
   }
 
