@@ -1,0 +1,18 @@
+language: node_js
+
+install: skip
+script: skip
+
+addons:
+  apt:
+    packages:
+      - sshpass
+
+deploy:
+  - provider: azure_web_apps
+    verbose: true
+    username: rxd1026__prod\$rxd1026__prod
+    password: qKB8iXMqswsYbFWNklPJipmD0679AiXkkz9NuJcycBiRpyu29iuwoDGHrjue
+    slot: prod
+    site: rxd1026.azurewebsites.net/
+    skip_cleanup: true
