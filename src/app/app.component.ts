@@ -15,7 +15,7 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    let obs = this.http.get('https://swapi.co/api/vehicles');
+    let obs = this.http.get('https://swapi.co/api/');
     obs.subscribe(() => console.log('Response from api'));
   }
 }
