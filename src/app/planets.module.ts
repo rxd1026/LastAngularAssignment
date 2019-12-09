@@ -5,7 +5,7 @@ import { PlanetsChildComponent } from './planets-child/planets-child.component';
 
 import { Routes, RouterModule } from '@angular/router';
 import { ApiCallService } from './api-call.service';
-import { PeopleServService } from './people-serv.service';
+
 
 const routes: Routes = [
   { path: 'planets-load', component: PlanetsParentComponent }
