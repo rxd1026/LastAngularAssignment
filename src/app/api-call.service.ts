@@ -9,6 +9,10 @@ export class ApiCallService {
     printToConsole(arg){
       console.log(arg);
     }
+
+    
+
+
   
    
   }
